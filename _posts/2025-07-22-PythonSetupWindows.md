@@ -29,6 +29,7 @@ If, instead, you see
 'python' is not recognized as an internal or external command,
 operable program or batch file.
 ```
+
 then you need to download and install python from [python.org/downloads](https://www.python.org/downloads/). 
 
 After downloading and installing, try printing the python version again.
