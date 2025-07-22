@@ -9,4 +9,4 @@ published: false
 
 # Getting Started with SymPy
 
-The sympy package helps 
+The sympy package helps to 
