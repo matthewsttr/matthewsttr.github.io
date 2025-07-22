@@ -30,10 +30,9 @@ If, instead, you see
 operable program or batch file.
 ```
 
-then you need to download and install python from [python.org/downloads](https://www.python.org/downloads/). 
+then you need to download and install python from [python.org/downloads](https://www.python.org/downloads/).  After downloading and installing, try printing the python version again.
 
-After downloading and installing, try printing the python version again.
-
+{:start="3"}
 3. Now that you have Python installed, you are going to create a virtual environment using *venv*. A virtual environment is a private workspace for a specific project. For us, that project is the collection of class assignments.
 
 To create the virtual environment, first enter the documents folder by using the cd ("change directory") command: 
