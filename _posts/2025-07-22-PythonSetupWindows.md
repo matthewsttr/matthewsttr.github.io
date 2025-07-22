@@ -2,7 +2,7 @@
 title: "Setting Up the Python Differential Toolkit (Windows)"
 date: 2025-07-20 12:00:00
 categories: [general]
-tags: [DifferentialEquations, Windows, Python]
+tags: [DifferentialEquations]
 author: Matthew
 published: true
 ---
