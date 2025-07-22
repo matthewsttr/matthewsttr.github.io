@@ -3,7 +3,7 @@ title: "Differential Equations - The Basics"
 date: 2025-07-12 12:00:00
 categories: [general]
 tags: [DifferentialEquations]
-author: Matthew
+author: "Matthew Sutter"
 published: false
 ---
 
