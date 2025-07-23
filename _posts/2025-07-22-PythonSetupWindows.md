@@ -2,7 +2,7 @@
 title: "The Python Differential Equations Toolkit (Windows)"
 date: 2025-07-20 12:00:00
 categories: [general]
-tags: [DifferentialEquations]
+tags: ["DifferentialEquations","Python"]
 author: "Matthew Sutter"
 published: true
 ---
@@ -20,7 +20,7 @@ This section gives instructions on how to set up a python "virtual environment" 
 
 
 {:start="1"}
-1. Open the command prompt. You can do this by pressing  <kbd>![Windows Key][newwinlogo]</kbd> + R, or going to the start menu and searching "cmd".
+1. Open the command prompt. You can do this by pressing  <kbd>[Windows Key][newwinlogo]</kbd> + R, or going to the start menu and searching "cmd".
 
 2. Check if python is installed. Type:
 
