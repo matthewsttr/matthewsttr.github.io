@@ -9,7 +9,7 @@ published: true
 [newwinlogo]: https://i.sstatic.net/B8Zit.png
 [oldwinlogo]: https://i.sstatic.net/T0oPO.png
 
-To solve differential equations in Python, we will use a trio of Python libraries: SymPy, SciPy, and Matplotlib. This page gives instructions on how to set up an environment to use these libraries on Windows. After following the instructions on this page, you should be able to:
+To solve differential equations in Python, we will use a trio of Python libraries: SymPy, SciPy, and Matplotlib. This page gives instructions on how to set up a virtual environment to use these libraries on Windows. After following the instructions on this page, you should be able to:
 
 1. Create a virtual environment using venv
 2. Install SymPy, SciPy, and Matplotlib into your new virtual environment using pip
@@ -55,32 +55,77 @@ cd Documents
 Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt (using whatever version of python you have installed):
 
 ```console
-python -m venv diffeq
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
+
+C:\Users\me\Documents>python -m venv diffeq
 ```
 
 Now navigate into the virtual environment directory with the cd command:
 
 ```console
-cd diffeq
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
+
+C:\Users\me\Documents>python -m venv diffeq
+
+C:\Users\me\Documents>cd diffeq
 ```
 
 Finally, to activate the virtual environment, type:
 
 ```console
-Scripts\Activate.bat
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
+
+C:\Users\me\Documents>python -m venv diffeq
+
+C:\Users\me\Documents>cd diffeq
+
+C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 ```
 
 Now your next line should have the name of virtual environment in parenthesis, like:
 
 ```console
-(diffeq) C:\Users\me\Documents>
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
+
+C:\Users\me\Documents>python -m venv diffeq
+
+C:\Users\me\Documents>cd diffeq
+
+C:\Users\me\Documents\diffeq>Scripts\Activate.bat
+
+(diffeq) C:\Users\me\Documents\diffeq>
 ```
 
-Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type:
+Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type <code>deactivate</kbd>:
 
 ```console
-deactivate
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
+
+C:\Users\me\Documents>python -m venv diffeq
+
+C:\Users\me\Documents>cd diffeq
+
+C:\Users\me\Documents\diffeq>Scripts\Activate.bat
+
+(diffeq) C:\Users\me\Documents\diffeq>deactivate
+C:\Users\me\Documents\diffeq>
 ```
+
 
 
 ## Gathering your libraries
