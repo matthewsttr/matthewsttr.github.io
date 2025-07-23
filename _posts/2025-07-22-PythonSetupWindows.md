@@ -6,8 +6,10 @@ tags: [DifferentialEquations]
 author: "Matthew Sutter"
 published: true
 ---
-
-This page give beginner instructions on how to set up python to solve differential equations in Python. After following these instructions, you should be able to 
+[winlogo]: https://i.sstatic.net/Rfuw7.png
+[newwinlogo]: https://i.sstatic.net/B8Zit.png
+[oldwinlogo]: https://i.sstatic.net/T0oPO.png
+This page give beginner instructions on how to set up python to solve differential equations in Python, on Windows. After following these instructions, you should be able to 
 
 1. Create a virtual environment using venv
 2. Install SymPy, SciPy, and Matplotlib into your new virtual environment using pip
@@ -18,7 +20,7 @@ This section gives instructions on how to set up a python "virtual environment" 
 
 
 {:start="1"}
-1. Open the command prompt. You can do this by pressing WindowsKey + R, or going to the start menu and searching "cmd".
+1. Open the command prompt. You can do this by pressing  <kbd>![Windows Key][newwinlogo]</kbd> + R, or going to the start menu and searching "cmd".
 
 2. Check if python is installed. Type:
 
