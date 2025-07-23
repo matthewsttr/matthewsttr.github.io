@@ -22,21 +22,17 @@ This section gives instructions on how to set up a python "virtual environment" 
 {:start="1"}
 1. Open the command prompt. You can do this by pressing  <kbd>![WindowsKey](https://i.sstatic.net/T0oPO.png)</kbd> + <kbd>R</kbd>, or going to the start menu and searching "cmd".
 
-2. Check if python is installed. Type:
+2. Check if python is installed. Type <code>python --version. You should get something like this:
 
 ```console
-python --version
-```
-
-You should get something like this:
-
-```console
+C:\Users\me>python --version
 Python 3.8.10
 ```
 
 If, instead, you see:
 
 ```console
+C:\Users\me>python --version
 'python' is not recognized as an internal or external command,
 operable program or batch file.
 ```
@@ -46,13 +42,16 @@ then you need to download and install python from [python.org/downloads](https:/
 {:start="3"}
 3. Now that you have Python installed, you are going to create a virtual environment using *venv*. A virtual environment is a private workspace for a specific project. venv is a module that comes bundled with every python installation.
 
-To create the virtual environment, first navigate to the documents folder by using the cd ("change directory") command: 
+To create the virtual environment, first navigate to the documents folder by using the cd ("change directory") command <code>cd Documents</code>: 
 
 ```console
-cd Documents
+C:\Users\me>python --version
+Python 3.8.10
+
+C:\Users\me>cd Documents
 ```
 
-Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt (using whatever version of python you have installed):
+Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt <code>python -m venv diffeq </code>:
 
 ```console
 C:\Users\me>python --version
@@ -63,7 +62,7 @@ C:\Users\me>cd Documents
 C:\Users\me\Documents>python -m venv diffeq
 ```
 
-Now navigate into the virtual environment directory with the cd command:
+Now navigate into the virtual environment directory with the cd command, <code>cd diffeq</code>:
 
 ```console
 C:\Users\me>python --version
@@ -76,7 +75,7 @@ C:\Users\me\Documents>python -m venv diffeq
 C:\Users\me\Documents>cd diffeq
 ```
 
-Finally, to activate the virtual environment, type:
+Finally, to activate the virtual environment, type <code>Scripts\Activate.bat</code>:
 
 ```console
 C:\Users\me>python --version
