@@ -105,7 +105,7 @@ C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 (diffeq) C:\Users\me\Documents\diffeq>
 ```
 
-Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type <code>deactivate</kbd>:
+Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type <code>deactivate</code>:
 
 ```powershell
 C:\Users\me>python --version
