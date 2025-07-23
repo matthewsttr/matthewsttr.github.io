@@ -11,27 +11,27 @@ published: true
 
 To solve differential equations in Python, we will use a trio of Python libraries: SymPy, SciPy, and Matplotlib. This page gives instructions on how to set up a virtual environment to use these libraries on Windows. After following the instructions on this page, you should be able to:
 
-1. Create a virtual environment using venv
-2. Install SymPy, SciPy, and Matplotlib into your new virtual environment using pip
-3. Write a short program using those libraries to solve a simple ODE both symbolically and numerically, and plot the solution on a graph.
+- Create a virtual environment using venv
+- Install SymPy, SciPy, and Matplotlib into your new virtual environment using pip
+- Write a short program using those libraries to solve a simple ODE both symbolically and numerically, and plot the solution on a graph.
 
 ## Setting up the virtual environment
 This section gives instructions on how to set up a python "virtual environment" using *venv* on Windows. The purpose of a virtual environment is to avoid clashes of libraries and dependencies, and to avoid installing them globally onto your system. This makes sure that you're using the same version of your libraries every time you work on your project.
 
 
 {:start="1"}
-1. Open the command prompt. You can do this by pressing  <kbd>![WindowsKey](https://i.sstatic.net/T0oPO.png)</kbd> + <kbd>R</kbd>, or going to the start menu and searching "cmd".
+1. Open the command prompt. You can do this by pressing  <kbd>Windows</kbd> + <kbd>R</kbd>, or going to the start menu and searching "cmd".
 
-2. Check if python is installed. Type <code>python --version. You should get something like this:
+2. Check if python is installed. Type <code>python --version</code>. You should get something like this:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 ```
 
-If, instead, you see:
+    If, instead, you see:
 
-```console
+```bat
 C:\Users\me>python --version
 'python' is not recognized as an internal or external command,
 operable program or batch file.
@@ -40,11 +40,9 @@ operable program or batch file.
 then you need to download and install python from [python.org/downloads](https://www.python.org/downloads/).  After downloading and installing, try printing the python version again.
 
 {:start="3"}
-3. Now that you have Python installed, you are going to create a virtual environment using *venv*. A virtual environment is a private workspace for a specific project. venv is a module that comes bundled with every python installation.
+3. Now that you have Python installed, you are going to create a virtual environment using *venv*. A virtual environment is a private workspace for a specific project. venv is a module that comes bundled with every python installation. To create the virtual environment, first navigate to the documents folder by using the cd ("change directory") command <code>cd Documents</code>: 
 
-To create the virtual environment, first navigate to the documents folder by using the cd ("change directory") command <code>cd Documents</code>: 
-
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -53,7 +51,7 @@ C:\Users\me>cd Documents
 
 Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt <code>python -m venv diffeq </code>:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -64,7 +62,7 @@ C:\Users\me\Documents>python -m venv diffeq
 
 Now navigate into the virtual environment directory with the cd command, <code>cd diffeq</code>:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -77,7 +75,7 @@ C:\Users\me\Documents>cd diffeq
 
 Finally, to activate the virtual environment, type <code>Scripts\Activate.bat</code>:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -92,7 +90,7 @@ C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 
 Now your next line should have the name of virtual environment in parenthesis, like:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -109,7 +107,7 @@ C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 
 Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type <code>deactivate</kbd>:
 
-```console
+```bat
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -132,19 +130,19 @@ So far our virtual environment doesn't have the libraries we need for our toolki
 
 1. Open the command prompt and navigate to your virtual environment directory by typing
 
-```console
+```bat
 cd C:\Users\me\documents\diffeq
 ```
 
 and activate the virtual environment by typing
 
-```console
+```bat
 \Scripts\Activate.bat
 ```
 
 Now that we have the virtual environment active, we will install our libraries using pip. pip is software that comes bundled with every python distribution. With your virtual environment, type the following to install SymPy:
 
-```console
+```bat
 pip install sympy
 ```
 
@@ -152,7 +150,7 @@ If asked, enter <kbd>Y</kbd> to allow the installation of dependencies.
 
 Similarly, install scipy and matplotlib with
 
-```console
+```bat
 pip install scipy
 pip install matplotlib
 ```
@@ -160,7 +158,7 @@ and again install any dependencies you don't currently have (for example, the nu
 
 Now that you have your main libraries installed, you need to check that you can import and use them in a python program. To launch the python interpreter, simply type:
 
-```console
+```bat
 python
 ```
 
