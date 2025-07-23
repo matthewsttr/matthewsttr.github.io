@@ -8,7 +8,8 @@ published: true
 [winlogo]: https://i.sstatic.net/Rfuw7.png
 [newwinlogo]: https://i.sstatic.net/B8Zit.png
 [oldwinlogo]: https://i.sstatic.net/T0oPO.png
-This page give beginner instructions on how to set up python to solve differential equations in Python, on Windows. After following these instructions, you should be able to 
+
+To solve differential equations in Python, we will use a trio of Python libraries: SymPy, SciPy, and Matplotlib. This page gives instructions on how to set up an environment to use these libraries on Windows. After following the instructions on this page, you should be able to:
 
 1. Create a virtual environment using venv
 2. Install SymPy, SciPy, and Matplotlib into your new virtual environment using pip
@@ -19,7 +20,7 @@ This section gives instructions on how to set up a python "virtual environment" 
 
 
 {:start="1"}
-1. Open the command prompt. You can do this by pressing  <kbd>WindowsKey</kbd> + <kbd>R<kbd>, or going to the start menu and searching "cmd".
+1. Open the command prompt. You can do this by pressing  <kbd>![WindowsKey](https://i.sstatic.net/T0oPO.png)</kbd> + <kbd>R</kbd>, or going to the start menu and searching "cmd".
 
 2. Check if python is installed. Type:
 
@@ -54,10 +55,10 @@ cd Documents
 Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt (using whatever version of python you have installed):
 
 ```console
-python3.8.10 -m venv diffeq
+python -m venv diffeq
 ```
 
-By calling the specific version of python, we will ensure that whenever we go back to our project, the same version of python is used. Now navigate into the virtual environment directory with the cd command:
+Now navigate into the virtual environment directory with the cd command:
 
 ```console
 cd diffeq
@@ -66,7 +67,7 @@ cd diffeq
 Finally, to activate the virtual environment, type:
 
 ```console
-\Scripts\Activate.bat
+Scripts\Activate.bat
 ```
 
 Now your next line should have the name of virtual environment in parenthesis, like:
@@ -103,7 +104,7 @@ Now that we have the virtual environment active, we will install our libraries u
 pip install sympy
 ```
 
-If asked, enter <code>Y</code> to allow the installation of dependencies.
+If asked, enter <kbd>Y</kbd> to allow the installation of dependencies.
 
 Similarly, install scipy and matplotlib with
 
@@ -120,3 +121,44 @@ python
 ```
 
 and you will be greeted with something like
+
+```python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+Now check that Sympy, Scipy, and Matplotlib are properly installed. With the python interpreter active, type:
+
+```python
+>>> import sympy
+>>> print(sympy.__version__)
+```
+
+you should see the version of sympy printed to the console. if however, you get:
+
+```python
+>>> import sympy
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named '
+```
+
+then you don't have access to the sympy module. One thing to check is that the you activated the virtual environment before starting the python interpreter. Another reason could be that your installation of sympy failed.
+
+Similarly, check that scipy and matplotlib were installed into the virtual environment:
+
+```python
+>>> import scipy
+>>> import matplotlib
+>>> print(scipy.__version__)
+>>> print(matplotlib.__version__)
+```
+
+When you're done, exit the python interpreter by typing:
+
+```python
+>>> quit()
+```
+
+##
