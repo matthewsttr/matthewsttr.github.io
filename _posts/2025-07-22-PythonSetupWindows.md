@@ -19,7 +19,7 @@ This section gives instructions on how to set up a python "virtual environment" 
 
 
 {:start="1"}
-1. Open the command prompt. You can do this by pressing  <kbd>![Windows Key](https://i.sstatic.net/B8Zit.png)</kbd> + R, or going to the start menu and searching "cmd".
+1. Open the command prompt. You can do this by pressing  <kbd>WindowsKey</kbd> + <kbd>R<kbd>, or going to the start menu and searching "cmd".
 
 2. Check if python is installed. Type:
 
