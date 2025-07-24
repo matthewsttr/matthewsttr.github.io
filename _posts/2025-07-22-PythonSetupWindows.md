@@ -387,4 +387,34 @@ Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (
       nlu: 0
 ```
 
+The <code>t</code> list in the output represents the "mesh" that the numerical calculation was done on, and the <code>y</code> list represents the numerical solution of the IVP at the corresponding <code>t</code> values. Scipy has approximated the solution at <code>t = 1</code> to be <code>y = 6.000e+00</code>. Compare this to our symbolic solution in the previous section, does this make sense?
+
+Now lets try solving the differential equation over a larger interval, say <code>interval=[0,5]</code>, so that we're trying to find $x(5)$.
+
+
+```python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+>>> from scipy import integrate
+>>> def f(t,x): return t**2 * x**2
+...
+>>> initial_condition = [2]
+>>> interval = [0,5]
+>>> integrate.solve_ivp(f, interval, initial_condition)  message: Required step size is less than spacing between numbers.
+  success: False
+   status: -1
+        t: [ 0.000e+00  1.000e-04 ...  1.145e+00  1.145e+00]
+        y: [[ 2.000e+00  2.000e+00 ...  5.502e+13  1.092e+14]]
+      sol: None
+ t_events: None
+ y_events: None
+     nfev: 638
+     njev: 0
+      nlu: 0
+```
+
+Examine the output. What did scipy numerically calculate $x(5)$ to be? Can you explain why scipy returned <code>success: False</code>? What happened here that is different than with the previous interval?
+
+## Using the toolkit: Matplotlib
+
+In this section, we will use Matplotlib to plot some solutions of differential equations.
 
