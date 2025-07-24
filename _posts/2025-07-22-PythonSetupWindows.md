@@ -24,14 +24,14 @@ This section gives instructions on how to set up a python "virtual environment" 
 
 2. Check if python is installed. Type <code>python --version</code>. You should get something like this:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 ```
 
     If, instead, you see:
 
-```powershell
+```console
 C:\Users\me>python --version
 'python' is not recognized as an internal or external command,
 operable program or cmdch file.
@@ -42,7 +42,7 @@ then you need to download and install python from [python.org/downloads](https:/
 {:start="3"}
 3. Now that you have Python installed, you are going to create a virtual environment using *venv*. A virtual environment is a private workspace for a specific project. venv is a module that comes bundled with every python installation. To create the virtual environment, first navigate to the documents folder by using the cd ("change directory") command <code>cd Documents</code>: 
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -51,7 +51,7 @@ C:\Users\me>cd Documents
 
 Now we are going to run the built-in venv command as a module, and tell it to create a virtual environment called diffeq. Type into the command prompt <code>python -m venv diffeq </code>:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -62,7 +62,7 @@ C:\Users\me\Documents>python -m venv diffeq
 
 Now navigate into the virtual environment directory with the cd command, <code>cd diffeq</code>:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -75,7 +75,7 @@ C:\Users\me\Documents>cd diffeq
 
 Finally, to activate the virtual environment, type <code>Scripts\Activate.bat</code>:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -90,7 +90,7 @@ C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 
 Now your next line should have the name of virtual environment in parenthesis, like:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -107,7 +107,7 @@ C:\Users\me\Documents\diffeq>Scripts\Activate.bat
 
 Whenver we are using our diffeq toolkit (including when we install packages) we will want to have the virtual environment activated. To exit the virtual environment, simply type <code>deactivate</code>:
 
-```powershell
+```console
 C:\Users\me>python --version
 Python 3.8.10
 
@@ -130,19 +130,19 @@ So far our virtual environment doesn't have the libraries we need for our toolki
 
 1. Open the command prompt and navigate to your virtual environment directory by typing
 
-```powershell
+```console
 cd C:\Users\me\documents\diffeq
 ```
 
 and activate the virtual environment by typing
 
-```powershell
+```console
 \Scripts\Activate.bat
 ```
 
 Now that we have the virtual environment active, we will install our libraries using pip. pip is software that comes bundled with every python distribution. With your virtual environment, type the following to install SymPy:
 
-```powershell
+```console
 pip install sympy
 ```
 
@@ -150,7 +150,7 @@ If asked, enter <kbd>Y</kbd> to allow the installation of dependencies.
 
 Similarly, install scipy and matplotlib with
 
-```powershell
+```console
 pip install scipy
 pip install matplotlib
 ```
@@ -158,7 +158,7 @@ and again install any dependencies you don't currently have (for example, the nu
 
 Now that you have your main libraries installed, you need to check that you can import and use them in a python program. To launch the python interpreter, simply type:
 
-```powershell
+```console
 python
 ```
 
@@ -265,4 +265,13 @@ $$
 x(t) = \frac{-3}{C_1 + t^3}
 $$
 
-Where $C_1$ is a free paramter. (P.S. check that this solution works by hand).
+Where $C_1$ is a free parameter. (P.S. check that this solution works by hand).
+
+## Using the toolkit: Numerics
+
+In this section, we will use SciPy to numerically solve our differential equation
+
+$$
+\frac{dx}{dt} = t^2 x^2.
+$$
+
